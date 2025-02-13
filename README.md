@@ -4,4 +4,4 @@
 - 💞️ I’m looking to collaborate on  web development projects and  app development project including web3 projects 
 - 📫 How to reach me .. contact me using x.com/Eruditea_anu or through my LinkedIn at   Anuoluwa kolapo.
 - 😄 Pronouns: He 
-- ⚡ Fun fact:loves productivity, freestyle, comedies and talk of impacts 
+- ⚡ Fun fact:Anything can happen 
