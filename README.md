@@ -5,7 +5,7 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=svector-anu" alt="svector-anu" /></a> </p>
 
-<p align="left"> <a href="https://twitter.com/eruidtea_anu" target="blank"><img src="https://img.shields.io/twitter/follow/eruidtea_anu?logo=twitter&style=for-the-badge" alt="eruditea_anu" /></a> </p>
+<p align="left"> <a href="https://twitter.com/eruditea_anu" target="blank"><img src="https://img.shields.io/twitter/follow/eruidtea_anu?logo=twitter&style=for-the-badge" alt="eruditea_anu" /></a> </p>
 
 - founder **Fluidpay**
 - DEV **WEB3NOVA**
