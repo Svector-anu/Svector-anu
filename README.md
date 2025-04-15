@@ -12,7 +12,7 @@
 
 - 🌱 I’m currently learning **smartcontracts, frontend devlopments,ai,aiagents**
 
-- 👯 I’m looking to collaborate on **web3 dapps,smartcontracts projects and defi protocols**
+- 👯 I’m looking to collaborate on **Web3 dapps,smartcontracts projects and defi protocols**
 
 - 👨‍💻 All of my projects are available at [svector-porfolio.vercel.app](svector-porfolio.vercel.app)
 
