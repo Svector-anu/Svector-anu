@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm svector</h1>
-<h3 align="center">A passionate frontend developer from Africa</h3>
+<h3 align="center">A passionate frontend and blockchain developer </h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=svector-anu&label=Profile%20views&color=0e75b6&style=flat" alt="svector-anu" /> </p>
 
