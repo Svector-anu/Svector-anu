@@ -5,7 +5,7 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=svector-anu" alt="svector-anu" /></a> </p>
 
-<p align="left"> <a href="https://twitter.com/eruditea_anu" target="blank"><img src="https://img.shields.io/twitter/follow/eruidtea_anu?logo=twitter&style=for-the-badge" alt="eruditea_anu" /></a> </p>
+<p align="left"> <a href="https://twitter.com/svector_eth" target="blank"><img src="https://img.shields.io/twitter/follow/eruidtea_anu?logo=twitter&style=for-the-badge" alt="svector_eth" /></a> </p>
 
 - founder **Fluidpay**
 - DEV **WEB3NOVA**
@@ -16,7 +16,7 @@
 
 - 👨‍💻 All of my projects are available at [svector-porfolio.vercel.app](svector-porfolio.vercel.app)
 
-- 📝 I regularly write articles on [x.com/eruditea_anu](x.com/eruditea_anu)
+- 📝 I regularly write articles on [x.com/eruditea_anu](x.com/svector_eth)
 
 - 💬 Ask me about **react,solidity,next,python,ai,**
 
