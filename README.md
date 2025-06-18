@@ -8,7 +8,7 @@
 <p align="left"> <a href="https://twitter.com/svector_eth" target="blank"><img src="https://img.shields.io/twitter/follow/eruidtea_anu?logo=twitter&style=for-the-badge" alt="svector_eth" /></a> </p>
 
 - founder **Fluidpay**
-- DEV **WEB3NOVA**
+- DEV **ABOKIXYZ**
 
 - 🌱 I’m currently learning **smartcontracts, frontend devlopments,ai,aiagents**
 
