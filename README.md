@@ -16,7 +16,7 @@
 
 - 👨‍💻 All of my projects are available at [svector-porfolio.vercel.app](svector-porfolio.vercel.app)
 
-- 📝 I regularly write articles on [x.com/eruditea_anu](x.com/svector_eth)
+- 📝 I regularly write articles on [x.com/svector_eth](x.com/svector_eth)
 
 - 💬 Ask me about **react,solidity,next,python,ai,**
 
