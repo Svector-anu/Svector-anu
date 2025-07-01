@@ -14,7 +14,7 @@
 
 - 👯 I’m looking to collaborate on **Web3 dapps,smartcontracts projects and defi protocols**
 
-- 👨‍💻 All of my projects are available at svector-porfolio.vercel.app
+- 👨‍💻 All of my projects are available at https://www.svector-porfolio.vercel.app
 
 - 📝 I regularly write articles on [x.com/svector_eth](x.com/svector_eth)
 
