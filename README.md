@@ -35,35 +35,7 @@ I'm also exploring **AI and zero-knowledge** to push the boundaries of developer
 
 ---
 
-##  Why Work With Me
 
-<div align="center">
-
-### What makes me unique: I bridge **DeFi infrastructure with real-world rails** (payments, SDKs, APIs) while educating and growing developer communities.
-
-</div>
-
-<table>
-<tr>
-<td align="center" width="33%">
-<img src="https://img.icons8.com/nolan/96/bridge.png"/>
-<h3> Bridge Builder</h3>
-<p>I connect traditional finance with DeFi protocols, creating seamless on/off-ramps and payment solutions that make Web3 accessible to mainstream users and businesses.</p>
-</td>
-<td align="center" width="33%">
-<img src="https://img.icons8.com/nolan/96/development-skill.png"/>
-<h3>  Full-Stack Developer</h3>
-<p>From smart contracts to React frontends, I deliver complete Web3 products. I don't just write code - I ship production-ready solutions that solve real problems.</p>
-</td>
-<td align="center" width="33%">
-<img src="https://img.icons8.com/nolan/96/teacher.png"/>
-<h3>  Community Builder</h3>
-<p>As a DevRel, I create educational content, SDKs, and developer resources that onboard the next generation of Web3 builders and accelerate ecosystem growth.</p>
-</td>
-</tr>
-</table>
-
-<div align="center">
 
 ### **My Value Proposition**
 
