@@ -11,7 +11,7 @@
   <a href="https://twitter.com/svector_eth">
     <img src="https://img.shields.io/badge/-@svector__eth-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white&labelColor=1DA1F2" alt="Twitter"/>
   </a>
-  <a href="https://svector-porfolio.vercel.app">
+  <a href="https://svector.xyz">
     <img src="https://img.shields.io/badge/-Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white&labelColor=000000" alt="Portfolio"/>
   </a>
   <a href="https://t.me/ilumin_a">
