@@ -187,7 +187,7 @@ I'm always excited to work on projects that **bridge Web3 with real-world adopti
 </td>
 <td align="center">
 <img src="https://img.icons8.com/color/48/domain--v1.png"/>
-<br/><a href="https://svector-porfolio.vercel.app"><strong>Portfolio</strong></a>
+<br/><a href="https://svector.xyz"><strong>Portfolio</strong></a>
 <br/>Projects & case studies
 </td>
 </tr>
