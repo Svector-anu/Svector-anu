@@ -25,18 +25,6 @@
 
 ---
 
-##  About Me
-
-I'm a **blockchain developer and DevRel** passionate about making Web3 practical. I built **ABOKI.XYZ**, a Naira ↔ Crypto on/off-ramp SDK and API for dApps, and **Fluidpay**, a smart contract for dispersing token payments like payroll and airdrops. 
-
-As **DevRel at Graphite Network**, I created the Developer Hub and demo dApps to help onboard developers. I work across **EVM and Solana** with Solidity, Web3.js, Uniswap, Jupiter, React, and Next.js. 
-
-I'm also exploring **AI and zero-knowledge** to push the boundaries of developer tools and trust-based applications.
-
----
-
-
-
 ### **My Value Proposition**
 
 <table>
