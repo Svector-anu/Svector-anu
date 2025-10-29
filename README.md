@@ -25,33 +25,6 @@
 
 ---
 
-### **My Value Proposition**
-
-<table>
-<tr>
-<td align="center" width="25%">
-<strong>  Speed to Market</strong><br/>
-I've built production systems that handle real money and real users
-</td>
-<td align="center" width="25%">
-<strong>  Multi-Chain Expertise</strong><br/>
-Native experience across EVM and Solana ecosystems
-</td>
-<td align="center" width="25%">
-<strong> Business Impact</strong><br/>
-I focus on solutions that drive adoption and revenue
-</td>
-<td align="center" width="25%">
-<strong> Community Growth</strong><br/>
-I help teams scale through developer education and tooling
-</td>
-</tr>
-</table>
-
-</div>
-
----
-
 ##  Technology Stack
 
 <div align="center">
@@ -98,65 +71,6 @@ I help teams scale through developer education and tooling
 
 ---
 
-##  Current Focus
-
-<div align="center">
-
-<table>
-<tr>
-<td align="center" width="25%">
-<img src="https://img.icons8.com/nolan/64/artificial-intelligence.png"/>
-<br/><strong>AI x Web3</strong>
-<br/>Developer Tools
-</td>
-<td align="center" width="25%">
-<img src="https://img.icons8.com/nolan/64/blockchain-technology.png"/>
-<br/><strong>Cross-Chain</strong>
-<br/>Payment Infrastructure
-</td>
-<td align="center" width="25%">
-<img src="https://img.icons8.com/nolan/64/code.png"/>
-<br/><strong>Developer Education</strong>
-<br/>SDKs & Tutorials
-</td>
-<td align="center" width="25%">
-<img src="https://img.icons8.com/nolan/64/privacy.png"/>
-<br/><strong>Zero-Knowledge</strong>
-<br/>Trust-Based Apps
-</td>
-</tr>
-</table>
-
-</div>
-
----
-
-## 🤝 Let's Collaborate
-
-I'm always excited to work on projects that **bridge Web3 with real-world adoption**:
-
-<div align="center">
-
-|  **Payment Infrastructure** | ⚡ **DeFi Protocols** | 🛠️ **Developer Tools** | 🌐 **Multi-Chain Solutions** |
-|:---:|:---:|:---:|:---:|
-| On/off-ramps | AMMs & DEXs | SDKs & APIs | EVM + Solana |
-| Cross-border payments | Lending protocols | Educational content | Bridge protocols |
-| Banking integrations | Yield farming | Documentation | Cross-chain tools |
-
-</div>
-
----
-
-##  Achievements & Recognition
-
-<div align="center">
-
-![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=svector-anu&theme=algolia&no-frame=true&margin-w=15&margin-h=15)
-
-</div>
-
----
-
 ##  Get In Touch
 
 <div align="center">
@@ -186,8 +100,6 @@ I'm always excited to work on projects that **bridge Web3 with real-world adopti
 ---
 
 <div align="center">
-
-###  *"Building the infrastructure that makes Web3 accessible to everyone"*
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6&height=100&section=footer&text=Thanks%20for%20visiting!&fontSize=16&fontColor=ffffff&animation=twinkling"/>
 
