@@ -1,9 +1,9 @@
-#  Hi, I'm Svector(Anu)
+#  hi, i'm svector(Anu)
 
 <div align="center">
 
-## Blockchain Developer & DevRel
-### Making Web3 Practical for Everyone
+## a blockchain Developer & devRel
+### making web3 practical for everyone
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=Building+Payment+Infrastructure+for+Web3;Creating+Developer+Tools+%26+SDKs;Working+Across+EVM+%26+Solana+Ecosystems;Exploring+AI+%2B+Zero-Knowledge+Tech)](https://git.io/typing-svg)
 
