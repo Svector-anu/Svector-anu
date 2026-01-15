@@ -57,13 +57,13 @@
 ## 📊 GitHub Analytics
 
 <div align="center">
-<table>
+<!-- <table>
 <tr>
 <td>
 <img height="180em" src="https://github-readme-stats.vercel.app/api?username=svector-anu&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=00D9FF&icon_color=00D9FF&text_color=FFFFFF"/>
-</td>
-<td>
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=svector-anu&layout=compact&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=00D9FF&text_color=FFFFFF"/>
+</td> -->
+<!-- <td>
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=svector-anu&layout=compact&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=00D9FF&text_color=FFFFFF"/> -->
 </td>
 </tr>
 </table>
