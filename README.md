@@ -1,7 +1,9 @@
 
 <div align="center">
 
-#  hi, i'm svector(Anu)
+#  hi, i'm Anu (a.k.a svector)
+
+
 
 <div align="center">
 
