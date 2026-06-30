@@ -12,7 +12,7 @@
 
 ---
 
-## 🛠 Technology Stack
+##  Technology Stack
 
 ### Blockchain
 ![Solidity](https://img.shields.io/badge/Solidity-363636?style=for-the-badge&logo=solidity&logoColor=white)
