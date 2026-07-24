@@ -29,11 +29,3 @@ x
 
 </div>
 
-
-<!-- GITHUBWALLPAPER:START -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://githubwallpaper.com/api/card/0jhcrix4fe8v91t0pt2bzgig?theme=dark&v=022589b635fb">
-  <source media="(prefers-color-scheme: light)" srcset="https://githubwallpaper.com/api/card/0jhcrix4fe8v91t0pt2bzgig?theme=light&v=022589b635fb">
-  <img alt="GitHub profile card" src="https://githubwallpaper.com/api/card/0jhcrix4fe8v91t0pt2bzgig?theme=dark&v=022589b635fb">
-</picture>
-<!-- GITHUBWALLPAPER:END -->
