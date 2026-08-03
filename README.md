@@ -64,6 +64,8 @@ Changes not staged for commit:
 nothing is ever really finished.
 ```
 
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=svector-anu&theme=github-dark-blue&hide_border=true" />
+
 ```bash
 $ open https://svector.xyz
 
