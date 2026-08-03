@@ -1,45 +1,48 @@
 ```
-svector/anu
+anu / svector
 ```
 
-```
+```txt
 ███████████████████░ 95%
+
 currently compiling ideas...
 ```
 
-```
-$ git status
-On branch main
-Your branch is ahead of origin/main by a few experiments.
+building software that's useful before it's impressive.  
+making complex systems feel simple.
 
-Changes to be committed:
-  feat: agents that delete their own approval loops
-  feat: financial rails you can reason about
-  fix: removed a layer that only moved complexity around
+[website](https://svector.xyz) • [x](https://x.com/svector_eth) • [telegram](https://t.me/ilumin_a)
 
-Untracked ideas:
-  formal verification for smart contracts
-  cli tools that feel like extensions of thought
-```
+---
 
-```
-$ curl -s https://svg.svector.xyz/api/now.svg
+~/currently
+
+```txt
+→ building developer tools
+→ experimenting with ai-native interfaces
+→ simplifying financial software
+→ contributing to open source
+→ shipping more than talking
 ```
 
-<img src="https://svg.svector.xyz/api/now.svg" alt="now" width="480" />
+---
 
-```
-$ git log --oneline -5
+~/about
 
-feat: build things
-fix: bad assumptions
-perf: remove waiting
-refactor: simplify everything
-chore: keep shipping
+```txt
+i enjoy turning messy ideas into software.
+
+sometimes that means writing protocols.
+sometimes it means obsessing over a 200ms animation.
+sometimes it's fixing a security issue nobody notices.
+
+the details matter.
 ```
 
-```
-$ npm run build
+---
+
+```console
+anu@github:~$ npm run build
 
 ✓ compiled successfully
 
@@ -48,11 +51,21 @@ warnings:
 - refuses to stop iterating
 ```
 
-```
-$ ls ~/links
-svector.xyz  x.com/svector_eth  t.me/ilumin_a
+```txt
+git status
+
+On branch main
+
+Changes not staged for commit:
+  modified: ideas
+  modified: experiments
+  modified: tomorrow
+
+nothing is ever really finished.
 ```
 
-```
-$ _
+```bash
+$ open https://svector.xyz
+
+launching...
 ```
