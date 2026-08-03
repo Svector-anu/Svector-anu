@@ -1,3 +1,5 @@
+<div align="center">
+
 # anu / svector
 
 ```txt
@@ -12,30 +14,18 @@ making complex systems feel simple.
 
 [website](https://svector.xyz) • [x](https://x.com/svector_eth) • [telegram](https://t.me/ilumin_a)
 
+</div>
+
 ---
 
-## ~/currently
-
 ```txt
+currently
+
 → building developer tools
-→ experimenting with ai interfaces
-→ simplifying financial infrastructure
-→ contributing to open source
-→ shipping more than talking
-```
-
----
-
-## ~/about
-
-```txt
-i enjoy turning messy ideas into software.
-
-sometimes that means writing protocols.
-sometimes it's obsessing over a 200ms animation.
-sometimes it's fixing a security issue nobody notices.
-
-the details matter.
+→ playing with ai
+→ making financial infrastructure less painful
+→ fixing bugs i created yesterday
+→ trying not to overengineer things
 ```
 
 ---
@@ -47,8 +37,11 @@ anu@github:~$ npm run build
 
 warnings:
 - still has too many ideas
-- refuses to stop iterating
+- keeps rewriting working code
+- somehow opened 43 browser tabs again
 ```
+
+---
 
 ```txt
 git status
@@ -60,17 +53,35 @@ Changes not staged for commit:
   modified: experiments
   modified: tomorrow
 
+Untracked files:
+  curiosity/
+  side-projects/
+
 nothing is ever really finished.
 ```
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=svector-anu&theme=github-dark-blue&hide_border=true" />
+---
+
+<div align="center">
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=svector-anu&theme=transparent&hide_border=true" />
+
+</div>
+
+---
+
+```git
+feat: build useful things
+fix: bad assumptions
+perf: remove waiting
+refactor: delete unnecessary complexity
+chore: commit when green
+```
+
+---
 
 ```bash
 $ open https://svector.xyz
 
 launching...
-```
-
-```git
-commit when green.
 ```
