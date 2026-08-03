@@ -1,6 +1,4 @@
-```
-anu / svector
-```
+# anu / svector
 
 ```txt
 ███████████████████░ 95%
@@ -8,32 +6,33 @@ anu / svector
 currently compiling ideas...
 ```
 
-building software that's useful before it's impressive.  
+building software that's useful before it's impressive.
+
 making complex systems feel simple.
 
 [website](https://svector.xyz) • [x](https://x.com/svector_eth) • [telegram](https://t.me/ilumin_a)
 
 ---
 
-~/currently
+## ~/currently
 
 ```txt
 → building developer tools
-→ experimenting with ai-native interfaces
-→ simplifying financial software
+→ experimenting with ai interfaces
+→ simplifying financial infrastructure
 → contributing to open source
 → shipping more than talking
 ```
 
 ---
 
-~/about
+## ~/about
 
 ```txt
 i enjoy turning messy ideas into software.
 
 sometimes that means writing protocols.
-sometimes it means obsessing over a 200ms animation.
+sometimes it's obsessing over a 200ms animation.
 sometimes it's fixing a security issue nobody notices.
 
 the details matter.
@@ -70,4 +69,8 @@ nothing is ever really finished.
 $ open https://svector.xyz
 
 launching...
+```
+
+```git
+commit when green.
 ```
