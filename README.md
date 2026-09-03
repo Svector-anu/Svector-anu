@@ -1,87 +1,15 @@
-<div align="center">
-
 # anu / svector
 
-```txt
-███████████████████░ 95%
+software engineer working on autonomous ai agent infrastructure at **[aeon](https://github.com/aeonfun/aeon)**, focused on developer tooling, coding-agent harnesses, and open-source research/security. i also build my own systems, like **skopos**, around agents and crypto infrastructure.
 
-currently compiling ideas...
-```
+contributor @ **[elizaOS/eliza](https://github.com/elizaOS/eliza/pulls?q=is%3Apr+author%3Asvector-anu+is%3Amerged)** — 125 merged prs, 137 commits to the open-source agentic os
 
-building software that's useful before it's impressive.
+**467 merged prs** across open source · 268 on repos i don't own · **86 reviewed** · 2.3k commits
 
-making complex systems feel simple.
+selected: [alibaba/open-code-review](https://github.com/alibaba/open-code-review/pull/561) `CVE-2026-14257` · [ghostty](https://github.com/ghostty-org/ghostty/pull/14072) · [mise](https://github.com/jdx/mise/pull/12714) · [pacifio/atlas](https://github.com/pacifio/atlas/pull/220) · [OpenMAIC](https://github.com/THU-MAIC/OpenMAIC/pull/1357) · [GitNexus](https://github.com/abhigyanpatwari/GitNexus/pull/3095) · [cumora](https://github.com/yetone/cumora/pull/8) · [x402scan](https://github.com/Merit-Systems/x402scan/pull/1079)
 
-[website](https://svector.xyz) • [x](https://x.com/svector_eth) • [telegram](https://t.me/ilumin_a)
+lately: agent harnesses that survive a change of engine, security findings that need a working poc instead of a pattern match, dev tooling
 
-</div>
+stack: typescript · javascript · python · solidity · go
 
----
-
-```txt
-currently
-
-→ building developer tools
-→ playing with ai
-→ making financial infrastructure less painful
-→ fixing bugs i created yesterday
-→ trying not to overengineer things
-```
-
----
-
-```console
-anu@github:~$ npm run build
-
-✓ compiled successfully
-
-warnings:
-- still has too many ideas
-- keeps rewriting working code
-- somehow opened 43 browser tabs again
-```
-
----
-
-```txt
-git status
-
-On branch main
-
-Changes not staged for commit:
-  modified: ideas
-  modified: experiments
-  modified: tomorrow
-
-Untracked files:
-  curiosity/
-  side-projects/
-
-nothing is ever really finished.
-```
-
----
-
-<div align="center">
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=svector-anu&theme=transparent&hide_border=true" />
-
-</div>
-
----
-
-```git
-feat: build useful things
-fix: bad assumptions
-perf: remove waiting
-refactor: delete unnecessary complexity
-chore: commit when green
-```
-
----
-
-```bash
-$ open https://svector.xyz
-
-launching...
-```
+reach me: [svector.xyz](https://svector.xyz) · [@svector_eth](https://x.com/svector_eth) · [telegram](https://t.me/ilumin_a)
