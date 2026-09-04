@@ -12,4 +12,4 @@ lately: agent harnesses that survive a change of engine, security findings that 
 
 stack: typescript · javascript · python · solidity · go
 
-reach me: [svector.xyz](https://svector.xyz) · [@svector_eth](https://x.com/svector_eth) · [telegram](https://t.me/ilumin_a)
+reach me: [svector.xyz](https://svector.xyz) · [@svector_eth](https://x.com/svector_eth) · [telegram](https://t.me/hisanu)
