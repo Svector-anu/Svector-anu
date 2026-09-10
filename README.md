@@ -13,3 +13,5 @@ lately: agent harnesses that survive a change of engine, security findings that 
 stack: typescript · javascript · python · solidity · go
 
 reach me: [svector.xyz](https://svector.xyz) · [@svector_eth](https://x.com/svector_eth) · [telegram](https://t.me/heisanu)
+
+<!-- slop-wallet:v1 {"chain":"solana","address":"Ex6ePz4UvsdCnYKptbm7tuPg4YBExiqHNxU6ARibg1Wy"} -->
