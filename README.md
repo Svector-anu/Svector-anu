@@ -10,7 +10,7 @@ building **[skopos](https://www.tryskopos.xyz)** — live product, **[skopos-mcp
 
 selected: [alibaba/open-code-review](https://github.com/alibaba/open-code-review/pull/561) `CVE-2026-14257` · [cloudflare/workers-sdk](https://github.com/cloudflare/workers-sdk/pull/15584) `CVE-2026-9277` · [ghostty](https://github.com/ghostty-org/ghostty/pull/14072) · [mise](https://github.com/jdx/mise/pull/12714) · [pacifio/atlas](https://github.com/pacifio/atlas/pull/220) · [OpenMAIC](https://github.com/THU-MAIC/OpenMAIC/pull/1357) · [GitNexus](https://github.com/abhigyanpatwari/GitNexus/pull/3095) · [cumora](https://github.com/yetone/cumora/pull/8) · [x402scan](https://github.com/Merit-Systems/x402scan/pull/1079) · [zsvirt.io](https://zsvirt.io/blog/zsvirt-open-source-monthly-issue-1) (critical RCE-chain disclosure — hardcoded root SSH key + SSO auth bypass, publicly credited)
 
-lately: agent harnesses that survive a change of engine, security findings backed by a working poc, proof gates that block a merge until behavior is actually demonstrated, apis other agents pay per-call to use
+lately: agent harnesses that survive a change of engine, security findings backed by a working poc, proof gates that hold a release until behavior is actually demonstrated, onchain apis agents pay each other to use
 
 stack: typescript · javascript · python · solidity · go
 
