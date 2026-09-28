@@ -1,6 +1,15 @@
-<img align="right" width="400" src="assets/streak.svg" alt="GitHub streak">
+<table>
+<tr>
+<td valign="middle">
 
-# anu / svector
+<h1>anu / svector</h1>
+
+</td>
+<td valign="middle" align="right">
+<img src="assets/streak.svg" width="460" alt="GitHub streak">
+</td>
+</tr>
+</table>
 
 software engineer working on autonomous ai agent infrastructure at **[aeon](https://github.com/aeonfun/aeon)**, focused on developer tooling, coding-agent harnesses, and open-source research/security. i also build my own systems, like **skopos**, around agents and crypto infrastructure.
 
