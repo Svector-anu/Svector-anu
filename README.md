@@ -1,11 +1,11 @@
 <table>
 <tr>
-<td valign="middle">
+<td width="1%" valign="middle">
 
 <h1>anu / svector</h1>
 
 </td>
-<td valign="middle" align="right">
+<td width="99%" valign="middle" align="right">
 <img src="assets/streak.svg" width="460" alt="GitHub streak">
 </td>
 </tr>
