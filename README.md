@@ -2,7 +2,7 @@
 <tr>
 <td width="1%" valign="middle">
 
-<h1>anu / svector</h1>
+<h1>anu</h1>
 
 </td>
 <td width="99%" valign="middle" align="right">
