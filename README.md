@@ -8,6 +8,8 @@ building **[skopos](https://www.tryskopos.xyz)** — live product, **[skopos-mcp
 
 **467 merged prs** across open source · 268 on repos i don't own · **86 reviewed** · 2.3k commits
 
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Svector-anu&background=000000&fire=FF6B35&ring=FF6B35&currStreakNum=FF7A45&currStreakLabel=FF7A45&sideNums=CCCCCC&sideLabels=888888&dates=777777&stroke=222222&hide_border=true&card_width=340)
+
 selected: [alibaba/open-code-review](https://github.com/alibaba/open-code-review/pull/561) `CVE-2026-14257` · [cloudflare/workers-sdk](https://github.com/cloudflare/workers-sdk/pull/15584) `CVE-2026-9277` · [ghostty](https://github.com/ghostty-org/ghostty/pull/14072) · [mise](https://github.com/jdx/mise/pull/12714) · [pacifio/atlas](https://github.com/pacifio/atlas/pull/220) · [OpenMAIC](https://github.com/THU-MAIC/OpenMAIC/pull/1357) · [GitNexus](https://github.com/abhigyanpatwari/GitNexus/pull/3095) · [cumora](https://github.com/yetone/cumora/pull/8) · [x402scan](https://github.com/Merit-Systems/x402scan/pull/1079) · [zsvirt.io](https://zsvirt.io/blog/zsvirt-open-source-monthly-issue-1) (critical RCE-chain disclosure — hardcoded root SSH key + SSO auth bypass, publicly credited)
 
 lately: agent harnesses that survive a change of engine, security findings backed by a working poc, proof gates that hold a release until behavior is actually demonstrated, onchain apis agents pay each other to use
