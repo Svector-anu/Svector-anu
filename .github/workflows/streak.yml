@@ -1,0 +1,28 @@
+name: Refresh streak widget
+
+on:
+  schedule:
+    - cron: "0 6 * * *" # once daily, well after most timezones' midnight rollover
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/generate_streak_svg.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/streak.svg
+          if git diff --staged --quiet; then
+            echo "no change"
+          else
+            git commit -m "chore: refresh streak widget"
+            git push
+          fi
