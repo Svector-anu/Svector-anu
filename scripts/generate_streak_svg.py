@@ -4,6 +4,10 @@
 No third-party dependencies (stdlib only) so this runs anywhere: locally
 with `gh` on PATH, or in Actions with GITHUB_TOKEN. Re-run any time to
 refresh the widget with current data - nothing here is hand-typed.
+
+Layout is three deliberately-separated zones (identity / week / activity),
+each with its own breathing room, rather than one dense strip - a dense
+strip is what made v1 read as a tiny badge instead of a card.
 """
 import datetime
 import json
@@ -41,7 +45,6 @@ def fetch_days():
         with urllib.request.urlopen(req, timeout=20) as resp:
             data = json.load(resp)
     else:
-        # local fallback: shell out to the already-authenticated gh CLI
         out = subprocess.run(
             ["gh", "api", "graphql", "-f", f"query={QUERY}", "-F", f"login={USER}"],
             capture_output=True, text=True, check=True,
@@ -55,12 +58,6 @@ def fetch_days():
 
 
 def current_streak(days):
-    """Consecutive days with contributions, ending today or yesterday.
-
-    Today counts as still-open (0 so far doesn't break the streak) so a
-    streak doesn't visibly die every morning before the operator has had
-    a chance to contribute.
-    """
     today = datetime.date.today()
     by_date = {datetime.date.fromisoformat(d["date"]): d["contributionCount"] for d in days}
     streak = 0
@@ -85,86 +82,148 @@ def heat_color(count, max_count):
     return stops[idx]
 
 
+# --- overall canvas -----------------------------------------------------
+# widths are derived, not guessed: the day-row needs 7 circles (r=10) at
+# col_w=28 starting with a 24px margin inside Z1_END, which needs Z2-Z1
+# >= 24*2 + 6*28 + 2*10 = 236px of usable zone before the divider even
+# starts to crowd - v1 of this redesign didn't leave that room and the
+# 7th (today) circle overflowed past the divider into zone 3.
+WIDTH = 529
+HEIGHT = 132
+
+Z1_END = 170   # streak identity
+Z2_END = 396   # weekly row (226px - fits 7 circles with real margin both sides)
+# Z3 = contribution activity, Z2_END..WIDTH (133px - fits the heatmap centered)
+
+
+def build_flame():
+    # a taller, cleaner flame silhouette than v1 - two nested paths (outer
+    # body, inner hot-core) read as a flame at this size where a single
+    # rough path just read as an orange blob.
+    return """
+    <g transform="translate(34,20)">
+      <ellipse cx="22" cy="34" rx="34" ry="34" fill="url(#glow)"/>
+      <path d="M22 0
+               C10 14 2 24 2 38
+               C2 54 12 66 22 66
+               C32 66 42 54 42 38
+               C42 30 38 24 34 20
+               C34 30 28 34 24 30
+               C20 26 22 18 26 12
+               C20 10 14 6 22 0 Z"
+            fill="url(#flameOuter)"/>
+      <path d="M22 20
+               C16 28 13 36 13 44
+               C13 52 17 58 22 58
+               C27 58 31 52 31 45
+               C31 40 28 36 25 34
+               C25 39 21 41 19 38
+               C17 35 18 30 21 26
+               C21 24 22 22 22 20 Z"
+            fill="url(#flameInner)"/>
+    </g>
+    """
+
+
+def build_identity(streak):
+    return f"""
+    {build_flame()}
+    <text x="112" y="62" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif"
+          font-size="46" font-weight="800" fill="#ff8c42">{streak}</text>
+    <text x="112" y="86" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif"
+          font-size="13" letter-spacing="0.3" fill="#e0a479">days streak</text>
+    """
+
+
+def build_week(last7, today):
+    cells = []
+    col_w = 28
+    start_x = Z1_END + 24 + 10  # left margin (24) + circle radius (10)
+    circle_r = 10
+    letter_y = 34
+    circle_cy = 66
+    number_y = 71
+    for i, d in enumerate(last7):
+        date = datetime.date.fromisoformat(d["date"])
+        letter = WEEKDAY_LETTER[d["weekday"]]
+        x = start_x + i * col_w
+        done = d["contributionCount"] > 0
+        cells.append(
+            f'<text x="{x}" y="{letter_y}" text-anchor="middle" '
+            f'font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" '
+            f'font-size="12" fill="#8b949e">{letter}</text>'
+        )
+        if done:
+            cells.append(f'''
+            <circle cx="{x}" cy="{circle_cy}" r="{circle_r}" fill="none" stroke="#ff6b35" stroke-width="2"/>
+            <path d="M{x-4},{circle_cy} L{x-1},{circle_cy+3} L{x+4},{circle_cy-4}"
+                  stroke="#ff6b35" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            ''')
+        else:
+            color = "#8b949e" if date == today else "#484f58"
+            cells.append(
+                f'<text x="{x}" y="{number_y}" text-anchor="middle" '
+                f'font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" '
+                f'font-size="13" fill="{color}">{date.day}</text>'
+            )
+    return "\n".join(cells)
+
+
+def build_heatmap(last14):
+    max_count = max((d["contributionCount"] for d in last14), default=1) or 1
+    cells = []
+    size = 13
+    gap = 3
+    cols = 7
+    grid_w = cols * size + (cols - 1) * gap
+    hx0 = Z2_END + (WIDTH - Z2_END - grid_w) // 2
+    grid_h = 2 * size + gap
+    hy0 = (HEIGHT - grid_h) // 2
+    for i, d in enumerate(last14):
+        col = i % cols
+        row = i // cols
+        x = hx0 + col * (size + gap)
+        y = hy0 + row * (size + gap)
+        color = heat_color(d["contributionCount"], max_count)
+        cells.append(f'<rect x="{x}" y="{y}" width="{size}" height="{size}" rx="4" fill="{color}"/>')
+    return "\n".join(cells)
+
+
 def build_svg(days):
     last7 = days[-7:]
     last14 = days[-14:]
     streak = current_streak(days)
     today = datetime.date.fromisoformat(days[-1]["date"])
 
-    # --- left: flame + streak number ---
-    flame = """
-    <g transform="translate(20,20)">
-      <ellipse cx="24" cy="30" rx="26" ry="26" fill="url(#glow)"/>
-      <path d="M24 2c3 9-4 11-4 18 0 5 4 8 8 8 5 0 9-4 9-10 0-5-3-8-3-8s2 4 0 8c-1 2-3 3-5 3-3 0-5-2-5-5 0-4 4-6 4-11 0-6-4-10-4-10s3 4-3 7c-5 3-8 7-8 13 0 8 6 14 14 14s14-6 14-14C41 15 30 8 24 2z"
-            fill="url(#flame)"/>
-    </g>
-    <text x="66" y="44" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif"
-          font-size="30" font-weight="700" fill="#ff8c42">{streak}</text>
-    <text x="66" y="62" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif"
-          font-size="11" fill="#e0a479">days streak</text>
-    """.format(streak=streak)
+    identity = build_identity(streak)
+    week = build_week(last7, today)
+    heatmap = build_heatmap(last14)
 
-    # --- middle: 7-day row ---
-    # circle radius (9) is deliberately well under half the column width (28)
-    # so adjacent rings never crowd each other - they did at r=11/col_w=24,
-    # which is what made the row read as misaligned even though the x
-    # positions themselves were evenly spaced.
-    day_cells = []
-    col_w = 28
-    start_x = 148
-    circle_r = 9
-    for i, d in enumerate(last7):
-        date = datetime.date.fromisoformat(d["date"])
-        letter = WEEKDAY_LETTER[d["weekday"]]
-        x = start_x + i * col_w
-        done = d["contributionCount"] > 0
-        day_cells.append(f'<text x="{x}" y="18" text-anchor="middle" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="10" fill="#8b949e">{letter}</text>')
-        if done:
-            day_cells.append(f'''
-            <circle cx="{x}" cy="38" r="{circle_r}" fill="none" stroke="#ff6b35" stroke-width="2"/>
-            <path d="M{x-4},38 L{x-1},41 L{x+4},34" stroke="#ff6b35" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-            ''')
-        else:
-            marker = "today" if date == today else "plain"
-            color = "#6e7681" if marker == "today" else "#484f58"
-            day_cells.append(f'<text x="{x}" y="42" text-anchor="middle" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="{color}">{date.day}</text>')
-    day_row = "\n".join(day_cells)
-    heatmap_start_x = start_x + (len(last7) - 1) * col_w + circle_r + 15
+    divider_y0, divider_y1 = 22, HEIGHT - 22
 
-    # --- right: mini heatmap, 2 rows x 7 cols over the last 14 days ---
-    max_count = max((d["contributionCount"] for d in last14), default=1) or 1
-    heat_cells = []
-    hx0 = heatmap_start_x
-    size = 11
-    gap = 3
-    for i, d in enumerate(last14):
-        col = i % 7
-        row = i // 7
-        x = hx0 + col * (size + gap)
-        y = 12 + row * (size + gap)
-        color = heat_color(d["contributionCount"], max_count)
-        heat_cells.append(f'<rect x="{x}" y="{y}" width="{size}" height="{size}" rx="3" fill="{color}"/>')
-    heat_grid = "\n".join(heat_cells)
-
-    width = 448
-    height = 96
-
-    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">
+    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{HEIGHT}" viewBox="0 0 {WIDTH} {HEIGHT}">
   <defs>
     <radialGradient id="glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#ff6b35" stop-opacity="0.35"/>
+      <stop offset="0%" stop-color="#ff6b35" stop-opacity="0.4"/>
       <stop offset="100%" stop-color="#ff6b35" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="flame" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#ffb454"/>
-      <stop offset="55%" stop-color="#ff6b35"/>
+    <linearGradient id="flameOuter" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffcf8a"/>
+      <stop offset="45%" stop-color="#ff8a3d"/>
       <stop offset="100%" stop-color="#c1401a"/>
     </linearGradient>
+    <linearGradient id="flameInner" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff3d6"/>
+      <stop offset="60%" stop-color="#ffb454"/>
+      <stop offset="100%" stop-color="#ff6b35"/>
+    </linearGradient>
   </defs>
-  <rect x="0.5" y="0.5" width="{width-1}" height="{height-1}" rx="10" fill="#161b22" stroke="#30363d"/>
-  {flame}
-  {day_row}
-  {heat_grid}
+  <rect x="0.5" y="0.5" width="{WIDTH-1}" height="{HEIGHT-1}" rx="14" fill="#161b22" stroke="#30363d"/>
+  <line x1="{Z1_END}" y1="{divider_y0}" x2="{Z1_END}" y2="{divider_y1}" stroke="#30363d" stroke-width="1"/>
+  <line x1="{Z2_END}" y1="{divider_y0}" x2="{Z2_END}" y2="{divider_y1}" stroke="#30363d" stroke-width="1"/>
+  {identity}
+  {week}
+  {heatmap}
 </svg>"""
     return svg
 

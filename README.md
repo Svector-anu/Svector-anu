@@ -1,4 +1,4 @@
-<img align="right" width="380" src="assets/streak.svg" alt="GitHub streak">
+<img align="right" width="400" src="assets/streak.svg" alt="GitHub streak">
 
 # anu / svector
 
