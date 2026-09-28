@@ -105,9 +105,14 @@ def build_svg(days):
     """.format(streak=streak)
 
     # --- middle: 7-day row ---
+    # circle radius (9) is deliberately well under half the column width (28)
+    # so adjacent rings never crowd each other - they did at r=11/col_w=24,
+    # which is what made the row read as misaligned even though the x
+    # positions themselves were evenly spaced.
     day_cells = []
-    col_w = 24
+    col_w = 28
     start_x = 148
+    circle_r = 9
     for i, d in enumerate(last7):
         date = datetime.date.fromisoformat(d["date"])
         letter = WEEKDAY_LETTER[d["weekday"]]
@@ -116,19 +121,20 @@ def build_svg(days):
         day_cells.append(f'<text x="{x}" y="18" text-anchor="middle" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="10" fill="#8b949e">{letter}</text>')
         if done:
             day_cells.append(f'''
-            <circle cx="{x}" cy="38" r="11" fill="none" stroke="#ff6b35" stroke-width="2"/>
-            <path d="M{x-5} 38l3.5 3.5L{x+5} 34" stroke="#ff6b35" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="{x}" cy="38" r="{circle_r}" fill="none" stroke="#ff6b35" stroke-width="2"/>
+            <path d="M{x-4},38 L{x-1},41 L{x+4},34" stroke="#ff6b35" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
             ''')
         else:
             marker = "today" if date == today else "plain"
             color = "#6e7681" if marker == "today" else "#484f58"
             day_cells.append(f'<text x="{x}" y="42" text-anchor="middle" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="{color}">{date.day}</text>')
     day_row = "\n".join(day_cells)
+    heatmap_start_x = start_x + (len(last7) - 1) * col_w + circle_r + 15
 
     # --- right: mini heatmap, 2 rows x 7 cols over the last 14 days ---
     max_count = max((d["contributionCount"] for d in last14), default=1) or 1
     heat_cells = []
-    hx0 = 320
+    hx0 = heatmap_start_x
     size = 11
     gap = 3
     for i, d in enumerate(last14):

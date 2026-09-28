@@ -18,54 +18,57 @@
             fill="url(#flame)"/>
     </g>
     <text x="66" y="44" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif"
-          font-size="30" font-weight="700" fill="#ff8c42">66</text>
+          font-size="30" font-weight="700" fill="#ff8c42">67</text>
     <text x="66" y="62" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif"
           font-size="11" fill="#e0a479">days streak</text>
     
   <text x="148" y="18" text-anchor="middle" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="10" fill="#8b949e">T</text>
 
-            <circle cx="148" cy="38" r="11" fill="none" stroke="#ff6b35" stroke-width="2"/>
-            <path d="M143 38l3.5 3.5L153 34" stroke="#ff6b35" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="148" cy="38" r="9" fill="none" stroke="#ff6b35" stroke-width="2"/>
+            <path d="M144,38 L147,41 L152,34" stroke="#ff6b35" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
             
-<text x="172" y="18" text-anchor="middle" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="10" fill="#8b949e">W</text>
+<text x="176" y="18" text-anchor="middle" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="10" fill="#8b949e">W</text>
 
-            <circle cx="172" cy="38" r="11" fill="none" stroke="#ff6b35" stroke-width="2"/>
-            <path d="M167 38l3.5 3.5L177 34" stroke="#ff6b35" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="176" cy="38" r="9" fill="none" stroke="#ff6b35" stroke-width="2"/>
+            <path d="M172,38 L175,41 L180,34" stroke="#ff6b35" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
             
-<text x="196" y="18" text-anchor="middle" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="10" fill="#8b949e">T</text>
+<text x="204" y="18" text-anchor="middle" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="10" fill="#8b949e">T</text>
 
-            <circle cx="196" cy="38" r="11" fill="none" stroke="#ff6b35" stroke-width="2"/>
-            <path d="M191 38l3.5 3.5L201 34" stroke="#ff6b35" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="204" cy="38" r="9" fill="none" stroke="#ff6b35" stroke-width="2"/>
+            <path d="M200,38 L203,41 L208,34" stroke="#ff6b35" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
             
-<text x="220" y="18" text-anchor="middle" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="10" fill="#8b949e">F</text>
+<text x="232" y="18" text-anchor="middle" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="10" fill="#8b949e">F</text>
 
-            <circle cx="220" cy="38" r="11" fill="none" stroke="#ff6b35" stroke-width="2"/>
-            <path d="M215 38l3.5 3.5L225 34" stroke="#ff6b35" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="232" cy="38" r="9" fill="none" stroke="#ff6b35" stroke-width="2"/>
+            <path d="M228,38 L231,41 L236,34" stroke="#ff6b35" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
             
-<text x="244" y="18" text-anchor="middle" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="10" fill="#8b949e">S</text>
+<text x="260" y="18" text-anchor="middle" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="10" fill="#8b949e">S</text>
 
-            <circle cx="244" cy="38" r="11" fill="none" stroke="#ff6b35" stroke-width="2"/>
-            <path d="M239 38l3.5 3.5L249 34" stroke="#ff6b35" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="260" cy="38" r="9" fill="none" stroke="#ff6b35" stroke-width="2"/>
+            <path d="M256,38 L259,41 L264,34" stroke="#ff6b35" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
             
-<text x="268" y="18" text-anchor="middle" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="10" fill="#8b949e">S</text>
+<text x="288" y="18" text-anchor="middle" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="10" fill="#8b949e">S</text>
 
-            <circle cx="268" cy="38" r="11" fill="none" stroke="#ff6b35" stroke-width="2"/>
-            <path d="M263 38l3.5 3.5L273 34" stroke="#ff6b35" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="288" cy="38" r="9" fill="none" stroke="#ff6b35" stroke-width="2"/>
+            <path d="M284,38 L287,41 L292,34" stroke="#ff6b35" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
             
-<text x="292" y="18" text-anchor="middle" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="10" fill="#8b949e">M</text>
-<text x="292" y="42" text-anchor="middle" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#6e7681">28</text>
-  <rect x="320" y="12" width="11" height="11" rx="3" fill="#4a2a17"/>
-<rect x="334" y="12" width="11" height="11" rx="3" fill="#7a3b1d"/>
-<rect x="348" y="12" width="11" height="11" rx="3" fill="#4a2a17"/>
-<rect x="362" y="12" width="11" height="11" rx="3" fill="#ffb454"/>
-<rect x="376" y="12" width="11" height="11" rx="3" fill="#4a2a17"/>
-<rect x="390" y="12" width="11" height="11" rx="3" fill="#4a2a17"/>
-<rect x="404" y="12" width="11" height="11" rx="3" fill="#4a2a17"/>
-<rect x="320" y="26" width="11" height="11" rx="3" fill="#4a2a17"/>
-<rect x="334" y="26" width="11" height="11" rx="3" fill="#4a2a17"/>
-<rect x="348" y="26" width="11" height="11" rx="3" fill="#4a2a17"/>
-<rect x="362" y="26" width="11" height="11" rx="3" fill="#4a2a17"/>
-<rect x="376" y="26" width="11" height="11" rx="3" fill="#7a3b1d"/>
-<rect x="390" y="26" width="11" height="11" rx="3" fill="#4a2a17"/>
-<rect x="404" y="26" width="11" height="11" rx="3" fill="#2b2118"/>
+<text x="316" y="18" text-anchor="middle" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="10" fill="#8b949e">M</text>
+
+            <circle cx="316" cy="38" r="9" fill="none" stroke="#ff6b35" stroke-width="2"/>
+            <path d="M312,38 L315,41 L320,34" stroke="#ff6b35" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            
+  <rect x="340" y="12" width="11" height="11" rx="3" fill="#4a2a17"/>
+<rect x="354" y="12" width="11" height="11" rx="3" fill="#7a3b1d"/>
+<rect x="368" y="12" width="11" height="11" rx="3" fill="#4a2a17"/>
+<rect x="382" y="12" width="11" height="11" rx="3" fill="#ffb454"/>
+<rect x="396" y="12" width="11" height="11" rx="3" fill="#4a2a17"/>
+<rect x="410" y="12" width="11" height="11" rx="3" fill="#4a2a17"/>
+<rect x="424" y="12" width="11" height="11" rx="3" fill="#4a2a17"/>
+<rect x="340" y="26" width="11" height="11" rx="3" fill="#4a2a17"/>
+<rect x="354" y="26" width="11" height="11" rx="3" fill="#4a2a17"/>
+<rect x="368" y="26" width="11" height="11" rx="3" fill="#4a2a17"/>
+<rect x="382" y="26" width="11" height="11" rx="3" fill="#4a2a17"/>
+<rect x="396" y="26" width="11" height="11" rx="3" fill="#7a3b1d"/>
+<rect x="410" y="26" width="11" height="11" rx="3" fill="#4a2a17"/>
+<rect x="424" y="26" width="11" height="11" rx="3" fill="#4a2a17"/>
 </svg>
