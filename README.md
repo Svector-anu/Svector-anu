@@ -1,17 +1,10 @@
-<table>
-<tr>
-<td width="1%" valign="middle">
 
-<h1>anu</h1>
 
-</td>
-<td width="99%" valign="middle" align="right">
-<img src="assets/streak.svg" width="460" alt="GitHub streak">
-</td>
-</tr>
-</table>
+<h1> hey i am anu</h1>
 
-software engineer working on autonomous ai agent infrastructure at **[aeon](https://github.com/aeonfun/aeon)**, focused on developer tooling, coding-agent harnesses, and open-source research/security. i also build my own systems, like **skopos**, around agents and crypto infrastructure.
+
+
+a software engineer working on autonomous ai agent infrastructure at **[aeon](https://github.com/aeonfun/aeon)**, focused on developer tooling, coding-agent harnesses, and open-source research/security. i also build my own systems, like **skopos**, around agents and crypto infrastructure.
 
 contributor @ **[elizaOS/eliza](https://github.com/elizaOS/eliza/pulls?q=is%3Apr+author%3Asvector-anu+is%3Amerged)** — 125 merged prs, 137 commits to the open-source agentic os
 
