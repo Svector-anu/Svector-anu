@@ -8,7 +8,6 @@ a software engineer working on autonomous ai agent infrastructure at **[aeon](ht
 
 contributor @ **[elizaOS/eliza](https://github.com/elizaOS/eliza/pulls?q=is%3Apr+author%3Asvector-anu+is%3Amerged)** — 125 merged prs, 137 commits to the open-source agentic os
 
-building **[skopos](https://www.tryskopos.xyz)** — live product, **[skopos-mcp](https://www.npmjs.com/package/skopos-mcp)** on npm, 10 prs shipped last week alone
 
 **467 merged prs** across open source · 268 on repos i don't own · **86 reviewed** · 2.3k commits
 
